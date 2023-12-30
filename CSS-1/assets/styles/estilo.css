@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Div Banner */
+
+.banner {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(../images/banner.png);
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.logo img {
+    width: 15vw;
+    padding: 2%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content h1 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.banner-content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3vw;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.banner-content button {
+    font-size: 1.3vw;
+    font-family: raleway, sans-serif;
+    padding: 1vw 2.5vw;
+    background-color: transparent;
+    color: #31A8DD;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid #31A8DD;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+/* Sessão Conteúdo do Curso */
+
+#course-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #33A8DB;
+}
+
+#course-content h2 {
+    margin-top: 5%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #33A8DB;
+}
+
+#course-content p {
+    font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.modules-list .module {
+    margin-top: 1.5%;
+    margin-left: 32%;
+    text-align: center;
+    width: 33%;
+    background-color: #252525;
+    padding: 16px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    border-radius: 100px;
+    border: 1px solid #33A8DB;
+    
+}
+
+span {
+    color: #33A8DB;
+}
+
+/* Sessão Transforme o Mundo */
+
+#transform-world {
+    margin-top: 5%;
+    background-image: url('../images/woman-code.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15%;
+    border-top: 1px solid #33A8DB;
+    border-bottom: 1px solid #33A8DB;
+}
+
+#transform-world p {
+    width: 30%;
+    font-size: 44px;
+    font-weight: 800;
+    text-transform: lowercase;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+/* Sessão Desafios Profissionais */
+
+#professional-challenges {
+    margin-top: 5%;
+    border-bottom: 1px solid #33A8DB;
+
+}
+
+#professional-challenges h2 {
+    color: #31A8DD;
+    letter-spacing: 4px;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+}
+
+#professional-challenges img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+#professional-challenges p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55%;
+    margin: 2em auto;
+    margin-bottom: 5%;
+}
+
+/* Rodapé */
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
+}
+
+footer img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+footer p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+a {
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: bold;
+}
