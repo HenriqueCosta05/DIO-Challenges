@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(44, 44, 44) 5%, rgb(30, 23, 90) 50%, rgb(84, 143, 220) 100%);
+    overflow: hidden;
+}
+
+.foguete {
+    width: 20%;
+    animation: decolador-foguete 5s ease-out infinite alternate;
+}
+
+@keyframes decolador-foguete {
+    0% {
+        transform: translateY(30vh);
+    }    
+    50% {
+        transform: translateY(-70vh);
+    }
+    100% {
+        transform: translateY(30vh);
+    }
+}

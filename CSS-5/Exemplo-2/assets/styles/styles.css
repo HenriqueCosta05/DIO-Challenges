@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid #3384d5;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.loader:nth-child(1) {
+    animation: carregando .8s ease-in-out alternate infinite;
+}
+
+.loader:nth-child(2) {
+    animation: carregando .8s ease-in-out .3s alternate infinite;
+}
+
+.loader:nth-child(3) {
+    animation: carregando .8s ease-in-out .6s alternate infinite;
+}
+
+@keyframes carregando {
+    to {
+        transform: scale(1.8);
+    }
+}
