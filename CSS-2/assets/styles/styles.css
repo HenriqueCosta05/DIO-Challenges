@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+/* Menu de navegação */
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.menu-navegacao img {
+    margin: 20px;
+}
+
+.logo img {
+    margin: 20px 0;
+    width: 8em;
+    height: 2em;
+}
+
+.menu-pesquisa {
+    margin: 20px 200px;
+}
+
+.menu-pesquisa input {
+    position: relative;
+    bottom: 10px;
+    width: 540px;
+    height: 3em;
+    border-radius: 100px 0 0 100px;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.menu-pesquisa button  {
+    position: absolute;
+    top: 10px;
+    width: 64px;
+    height: 40px;
+    border-radius: 0 40px 40px 0;
+    border: 1px solid rgba(0, 0, 0, .3);
+    margin: 0;
+}
+
+.menu-pesquisa button img {
+    width: 2em;
+    height: 2em;
+}
+
+.menu-pesquisa input::placeholder {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.perfil {
+    margin: 0 25px;
+    display: flex;
+    flex-direction:row;
+    gap: 25px;
+}
+
+.upload img, .notificacoes img {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.perfil-usuario img {
+    width: 36px;
+    height: 36px;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+/* Conteúdo do vídeo */
+
+section .conteudo {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.video {
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.video img {
+    position: relative;
+    top: 2%;
+    left: 8%;
+    width: 800px;
+    height: 400px;
+}
+
+.titulo-video h3 {
+    position: relative;
+    left: 8%;
+    font-size: 20px;
+    margin: 10px;
+    width: 500px;
+}
+
+.descricao-canal {
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-start;
+    column-gap: 70px;
+    width: 300px;
+    left: 3%;
+}
+
+.descricao-canal img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+
+.botoes {
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    width: 500px;
+    height: 50px;
+}
+
+.botoes .inscricao button {
+    position: relative;
+    left: 30px;
+    bottom: 15px;
+    width: 90px;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 100px;
+    border: none;
+}
+
+.botoes .like-dislike {
+    position: relative;
+    left: 30px;
+    top: 5px;
+    height: 90px;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.botoes .like-dislike button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.botoes .like-dislike .like {
+    border-radius: 100px 0 0 100px;
+}
+
+.botoes .like-dislike .dislike {
+    border-radius: 0 100px 100px 0;
+}
+
+.like-dislike button .imagem {
+    display: inline-flex;
+    height: 30px;
+    margin: 5px 30px 20px 5px;
+}
+
+.like-dislike button .imagem img {
+    display: inline-flex;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    left: 5px;
+}
+
+.like-dislike button .imagem p {
+    display: inline-flex;
+    width: 45px;
+    height: 25px;
+    margin-left: 0;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.like-dislike {
+    margin-left: 100px;
+}
+
+.opcoes {
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: relative;
+    bottom: 15px;
+    left: 30px;
+
+}
+
+.opcoes button {
+    width: 90px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+}
+
+.compartilhar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compartilhar button {
+    border-radius: 100px;
+}
+
+.compartilhar img {
+    display: inline-flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.compartilhar p {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    width: 60px;
+    margin-top: 5px;
+}
+
+.mais-opcoes {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mais-opcoes button {
+    width: 40px;
+    height: 40px;
+}
+
+.mais-opcoes button img {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.estatisticas-video {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    left: 10%;  
+}
+
+.estatisticas-video p {
+    font-weight: 600;
+}
+
+.descricao-video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 40px;
+    position: relative;
+    left: 10%;  
+}
+
+/* Recomendações */
+
+.menu-recomendacoes {
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b c d";
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.recomendacao {
+    display: inline-grid;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.recomendacao img {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    width: 168px;
+    height: 94px;
+    border-radius: 10px;
+}
+
+.recomendacao p {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    height: auto;
+    padding-left: 5px;
+}
+
+.titulo-recomendacao {
+    font-weight: 600;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 5px;
+    justify-self: start;
+}
+
+.descricao-recomendacao {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: start;
+}
+
+.descricao-recomendacao-1 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: start;
+}
+
+.descricao-recomendacao-2 {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
