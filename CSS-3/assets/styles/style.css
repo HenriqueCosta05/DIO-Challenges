@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilização do Cabeçalho */
+header .container {
+    width: 100%;
+    position: sticky;
+    display: inline-flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .logo {
+    display: flex;
+    position: relative;
+    column-gap: 20px;
+    left: 20px;
+    top: 20px;
+    background: transparent;
+}
+
+.menu-pesquisa {
+    display: inline-flex;
+    width: 540px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu-pesquisa button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 64px;
+    border-radius: 0 100px 100px 0;
+    background-color: #ffffff14;
+    border: .5px solid rgba(256, 256, 256, .1);
+}
+
+.lupa svg {
+    display: flex;
+    background: none;
+    position: relative;
+}
+
+.menu-pesquisa .input {
+    display: inline-flex;
+    width: 540px;
+    height: 40px;
+    border-radius: 100px 0 0 100px;
+    border: .5px solid rgba(256, 256, 256, .1);
+}
+
+.input::placeholder {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.imagem-perfil {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+}
+
+.imagem-perfil img {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.container .botoes {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 30px;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+
+/* Estilização da barra de navegação */
+main {
+    display: inline-flex;
+    width: 80%;
+}
+.container-pagina-inicial {
+    display: grid;
+}
+main .barra-navegacao {
+    display: -webkit-inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 15px;
+    margin-bottom: 0;
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+
+main .parte-2 {
+    margin-top: 9px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.barra-navegacao > * {
+    display: -webkit-inline-flex;
+    flex-direction: row;
+}
+
+.barra-navegacao > * > .texto-barra-navegacao {
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    position: relative;
+    width: 180px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+/* Estilização do grid de recomendações */
+main .container-recomendacoes {
+    gap: 2.5rem;
+    display: inline-grid;
+    width: 100%;
+    left: 20%;
+    top: 5%;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    margin-left: 2%;
+}
+.descricao-video {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-columns: auto minmax(0, 1fr);
+    height: fit-content;
+}
+
+.descricao-video img {
+    border-radius: 50%;
+    display: inline-grid;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.recomendacao .imagem {
+    display: flex;
+    height: 12rem;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.imagem img {
+    border-radius: 8%;
+}
+.descricao-video .titulo-video {
+    height: fit-content;
+    margin-top: 0;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    display: inline-grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-weight: 500;
+    position: relative;
+    align-self: end;
+}
+
+.descricao-video .nome-canal {
+    color: #aaa;
+    font-size: 14px;
+    height: fit-content;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.descricao-video .descricao {
+    color: #aaa;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    display: inline-grid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+}
+
